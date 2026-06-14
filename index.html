@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vignesh S | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Inter, Arial, sans-serif;
+            background: #fff;
+            color: #111827;
+            line-height: 1.7;
+        }
+
+        .container {
+            width: min(1100px, 90%);
+            margin: auto;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: #fff;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 0;
+        }
+
+        .logo {
+            font-weight: 700;
+        }
+
+        .links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: #4b5563;
+        }
+
+        .hero {
+            padding: 100px 0;
+        }
+
+        h1 {
+            font-size: clamp(3rem, 6vw, 5rem);
+            line-height: 1.05;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            margin: 12px 0 20px;
+            color: #111;
+        }
+
+        .lead {
+            max-width: 700px;
+            color: #6b7280;
+        }
+
+        .btns {
+            display: flex;
+            gap: 12px;
+            margin-top: 24px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+        .primary {
+            background: #111827;
+            color: #fff;
+        }
+
+        .secondary {
+            border: 1px solid #d1d5db;
+            color: #111827;
+        }
+
+        section {
+            padding: 80px 0;
+            border-top: 1px solid #f1f5f9;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .muted {
+            color: #6b7280;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            padding: 10px 16px;
+            border: 1px solid #e5e7eb;
+            border-radius: 999px;
+        }
+
+        .card {
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            padding: 24px;
+            margin-top: 20px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px 0;
+            color: #6b7280;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        @media (max-width: 768px) {
+            .links {
+                display: none;
+            }
+
+            .hero {
+                padding: 70px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container nav">
+            <div class="logo">Vignesh S</div>
+
+            <div class="links">
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Vignesh S</h1>
+
+            <p class="tagline">Turning curiosity into code.</p>
+
+            <p class="lead">
+                B.Tech Computer Science Engineering student at G. Pulla Reddy Engineering
+                College, building a strong foundation in programming through hands-on
+                projects and continuous learning.
+            </p>
+
+            <div class="btns">
+                <a class="btn primary" href="#projects">View Project</a>
+
+                <a
+                    class="btn secondary"
+                    href="https://github.com/VigneshCdx"
+                    target="_blank"
+                >
+                    GitHub
+                </a>
+
+                <a
+                    class="btn secondary"
+                    href="https://www.linkedin.com/in/vignesh-somapuram/"
+                    target="_blank"
+                >
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About</h2>
+
+            <p class="muted">
+                I'm a Computer Science student who enjoys learning by building.
+                My current focus is strengthening programming fundamentals,
+                understanding how software works, and applying what I learn
+                through practical projects.
+            </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+
+            <div class="card">
+                <h3>G. Pulla Reddy Engineering College</h3>
+
+                <p class="muted">
+                    B.Tech • Computer Science Engineering (CSE)
+                </p>
+
+                <p>
+                    Currently pursuing undergraduate studies with a focus on
+                    programming fundamentals, problem solving, and software
+                    development.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Currently Learning</h2>
+
+            <div class="skills">
+                <span class="skill">C</span>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">Git</span>
+                <span class="skill">GitHub</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Featured Project</h2>
+
+            <div class="card">
+                <h3>🌃 NEON RUNNER</h3>
+
+                <p><strong>Problem</strong></p>
+
+                <p class="muted">
+                    I wanted to understand how game mechanics, collision detection,
+                    scoring systems, and user interactions work together in a real
+                    application.
+                </p>
+
+                <br>
+
+                <p><strong>Approach</strong></p>
+
+                <p class="muted">
+                    Built a browser-based endless runner using HTML, CSS,
+                    JavaScript, and the Canvas API with movement controls,
+                    obstacle generation, coin collection, scoring, and
+                    leaderboard functionality.
+                </p>
+
+                <br>
+
+                <p><strong>Outcome</strong></p>
+
+                <p class="muted">
+                    Created a fully playable cyberpunk-themed endless runner that
+                    works across desktop and mobile devices while strengthening
+                    my JavaScript fundamentals.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <div class="container">
+            <h2>Certifications</h2>
+
+            <div class="cert-grid">
+                <div class="card">
+                    <h3>Business Writing Skills</h3>
+
+                    <p class="muted">
+                        Infosys Springboard • Nov 2025
+                    </p>
+
+                    <p>
+                        Professional writing, email etiquette, business
+                        communication, and workplace documentation.
+                    </p>
+
+                    <a
+                        href="https://www.linkedin.com/in/vignesh-somapuram/details/certifications/"
+                        target="_blank"
+                    >
+                        View Certificate →
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h3>Business English</h3>
+
+                    <p class="muted">
+                        Infosys Springboard • Nov 2025
+                    </p>
+
+                    <p>
+                        Professional communication, workplace English,
+                        and business writing fundamentals.
+                    </p>
+
+                    <a
+                        href="https://www.linkedin.com/in/vignesh-somapuram/details/certifications/"
+                        target="_blank"
+                    >
+                        View Certificate →
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h3>Group Discussions & Communication Skills</h3>
+
+                    <p class="muted">
+                        Infosys Springboard • Nov 2025
+                    </p>
+
+                    <p>
+                        Communication skills, teamwork, active listening,
+                        and effective participation in discussions.
+                    </p>
+
+                    <a
+                        href="https://www.linkedin.com/in/vignesh-somapuram/details/certifications/"
+                        target="_blank"
+                    >
+                        View Certificate →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+
+            <p class="muted">
+                Feel free to connect with me.
+            </p>
+
+            <div class="btns">
+                <a
+                    class="btn secondary"
+                    href="https://github.com/VigneshCdx"
+                >
+                    GitHub
+                </a>
+
+                <a
+                    class="btn secondary"
+                    href="https://www.linkedin.com/in/vignesh-somapuram/"
+                >
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        Built with HTML, CSS and curiosity.
+    </footer>
+</body>
+</html>
